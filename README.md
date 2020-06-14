@@ -10,7 +10,7 @@ PyDrive is used for sharing audio files and JSON-settings between patch and Cola
 
 python --init True creates a Folder called "M4L-Timbre-Transfer-Folder" in your Google Drive root. Audio files from your local computer will be sent to this folder, and the Notebook will find them, and process them. 
 
-##Dependicies
+## Dependencies
 
 [PyDrive](https://pythonhosted.org/PyDrive/) - 
 [PythonOsc](https://github.com/attwad/python-osc) - 
