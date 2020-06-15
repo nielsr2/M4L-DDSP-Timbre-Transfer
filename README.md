@@ -26,7 +26,7 @@ python drive-sync.py --init True creates a Folder called "M4L-Timbre-Transfer-Fo
 
 This is script kiddie timbre transfer - ["Have fun! And please feel free to hack this notebook to make your own creative interactions.“ - Magenta ](https://colab.research.google.com/github/magenta/ddsp/blob/master/ddsp/colab/demos/timbre_transfer.ipynb)
 
-Be sure not too share your Google Drive API key.. They've been added to the gitignore.
+Be sure not to share your Google Drive API key.. They've been added to the gitignore.
 
 
 
