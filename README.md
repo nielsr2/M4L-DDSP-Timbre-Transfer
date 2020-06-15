@@ -5,11 +5,15 @@ This device connects [DDSP](https://github.com/magenta/ddsp)'s [timbre transfer 
 
 ![](m4l-interface.png)
 
+It allows the five instruments from the original notebook - Violin, Trumpet, Flute, Flute2, & Tenor Saxophone.
+
 It consists of a python script, m4l-patch, and a Google Colab Notebook. 
 
 PyDrive is used for sharing audio files and JSON-settings between patch and Colab Notebook. [This means you need to get a api key For the local python end, and save it as client_secrets.json in the same folder as the python script.](https://pythonhosted.org/PyDrive/quickstart.html#authentication)
 
 python drive-sync.py --init True creates a Folder called "M4L-Timbre-Transfer-Folder" in your Google Drive root. Audio files from your local computer will be sent to this folder, and the Notebook will find them, and process them. The script will prompt you to clear it on start. Remember to clear the folder with the script for downloaded files that have previously been timbre transfered. 
+
+
 
 ## Dependencies
 
@@ -30,6 +34,7 @@ You're welcome to extend on it.
 
 * Test Windows support
 * Show spectral images from notebook?
+* Descripe settings
 * Make procedure smoother 
 * Make better instructions
 * Find better way to get transferred audio into Ableton as a clip (right now it only loads the audio into a buffer you can playback, and then record)
