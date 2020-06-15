@@ -28,6 +28,7 @@ This is script kiddie timbre transfer - ["Have fun! And please feel free to hack
 
 Be sure not to share your Google Drive API key.. They've been added to the gitignore.
 
+[Here's a small video showing the device in action](https://player.vimeo.com/video/429263185)
 
 
 ## TODO's
