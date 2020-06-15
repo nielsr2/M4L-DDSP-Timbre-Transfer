@@ -26,7 +26,7 @@ python drive-sync.py --init True creates a Folder called "M4L-Timbre-Transfer-Fo
 
 This is script kiddie timbre transfer - ["Have fun! And please feel free to hack this notebook to make your own creative interactions.“ - Magenta ](https://colab.research.google.com/github/magenta/ddsp/blob/master/ddsp/colab/demos/timbre_transfer.ipynb)
 
-Be sure not too share your Gooogle Drive API key.. They've been added to the gitignore.
+Be sure not too share your Google Drive API key.. They've been added to the gitignore.
 
 
 
@@ -36,7 +36,7 @@ You're welcome to extend on it.
 
 * Test Windows support
 * Show spectral images from notebook?
-* Descripe settings
+* Describe settings
 * Make procedure smoother 
 * Make better instructions
 * Find better way to get transferred audio into Ableton as a clip (right now it only loads the audio into a buffer you can playback, and then record)
