@@ -18,11 +18,11 @@ python drive-sync.py --init True creates a Folder called "M4L-Timbre-Transfer-Fo
 * [DDSP](https://github.com/magenta/ddsp) (Timbre Transfer Demo Notebook) - The original notebook can be changed, and requires changes for this too.
 
 
-## other notes
+## Other notes
 
 This is script kiddie timbre transfer - ["Have fun! And please feel free to hack this notebook to make your own creative interactions.“ - Magenta ](https://colab.research.google.com/github/magenta/ddsp/blob/master/ddsp/colab/demos/timbre_transfer.ipynb)
 
-It seems to be working for
+
 
 ## TODO's
 
@@ -34,4 +34,5 @@ You're welcome to extend on it.
 * Make better instructions
 * Find better way to get transferred audio into Ableton as a clip (right now it only loads the audio into a buffer you can playback, and then record)
 * Find bugs!
+* It seems only to be working for wav-files or similar, located in a non-temporary folder.
 
