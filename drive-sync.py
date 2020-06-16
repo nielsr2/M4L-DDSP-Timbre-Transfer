@@ -92,7 +92,7 @@ def notify(filePath):
 def downloadFile():
     global counter, latency
     while True:
-        print("lookiing for", counter)
+        print("looking for", counter)
         file_list = drive.ListFile(
             {'q': "'" + gdID + "'" +  " in parents and trashed=false and title = '" + "ddspd" + str(counter) + ".wav'"}).GetList()
         for file1 in file_list:
@@ -112,7 +112,7 @@ def downloadFile():
 
 def sendFile(unused_addr, fileName, model, octave, loudness, threshold, auto, autotune, quiet):
 
-    print("sending:", unused_addr, fileName, model, octave, loudness, threshold, auto, autotune, quiet)
+    print("sending: counter " , counter , unused_addr, fileName, model, octave, loudness, threshold, auto, autotune, quiet)
     global counter, gdID, latency
     latency = int(time.time()) % 86400
 
@@ -133,10 +133,12 @@ def sendFile(unused_addr, fileName, model, octave, loudness, threshold, auto, au
 
 
     # convert to 16000 sample rate
+    # TODO: check if doing this in the colab notebook is faster.
     data, sr = librosa.load(fileName, sr=16000)
     print("data", data)
     data = data.astype(np.float32)
     sf.write('send.wav', data, 16000, subtype='PCM_16')
+
     # send audio file to GD
     testfile = drive.CreateFile(
             {'parents': [{'id': gdID}], 'title': 'sendAudio' + str(counter) + '.wav'})
@@ -149,7 +151,6 @@ if __name__ == "__main__":
     # FOR AUTHENTICATIION
     # global gdID
 
-    print("asdfasdf")
     parser = argparse.ArgumentParser()
     parser.add_argument("--init", required=False, help="create GD folder")
     parser.add_argument("--ip", default="127.0.0.1",
@@ -162,7 +163,6 @@ if __name__ == "__main__":
     # createGDFolder()
     if (args.init):
         print("args.firstTime was:", args.init)
-        # time.sleep(5)
         createGDFolder()
     txtfile = open("folderID.txt", "r")
     gdID = txtfile.read()
