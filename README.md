@@ -15,12 +15,11 @@ python drive-sync.py --init True creates a Folder called "M4L-Timbre-Transfer-Fo
 ## Instructions
 
 1. install python
-2. run ``` pip install python-osc``` 
+2. run ``` pip install python-osc```
 ``` pip install librosa```
 ``` pip install pydrive```
 ``` pip install numpy ```
 ``` pip install soundfile ```
-3. run ```python sync-drive.py --init True```
 4. [read this](https://pythonhosted.org/PyDrive/quickstart.html#authentication) - Get the API key json-file as is described, and save it as client_secrets.json in the same folder as the drive-sync.py file.
 5. The first time you run drive-sync.py you'll need to make new folder on your Google Drive, to put the audio-files and settings. Running ```drive-sync.py --init True``` creates a folder called 'M4l-Timbre-Transfer' in the root of your Google Drive. The ID for this folder is saved in folderID.txt. You can also look at PyDrives documentation, and define you own folders ID as the folderID.txt.
 6. Open the [notebook in Google Colab.](https://colab.research.google.com/github/nielsr2/M4L-DDSP-Timbre-Transfer/blob/master/m4l_timbre_transfer.ipynb)
