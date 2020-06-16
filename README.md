@@ -15,17 +15,17 @@ python drive-sync.py --init True creates a Folder called "M4L-Timbre-Transfer-Fo
 ## Instructions
 
 1. install python
-2. run ``` pip install python-osc```
+2. Open your Terminal and write the following commands ``` pip install python-osc```
 ``` pip install librosa```
 ``` pip install pydrive```
 ``` pip install numpy ```
 ``` pip install soundfile ```
 4. [read this](https://pythonhosted.org/PyDrive/quickstart.html#authentication) - Get the API key json-file as is described, and save it as client_secrets.json in the same folder as the drive-sync.py file.
-5. The first time you run drive-sync.py you'll need to make new folder on your Google Drive, to put the audio-files and settings. Running ```drive-sync.py --init True``` creates a folder called 'M4l-Timbre-Transfer' in the root of your Google Drive. The ID for this folder is saved in folderID.txt. You can also look at PyDrives documentation, and define you own folders ID as the folderID.txt.
+5. The first time you run drive-sync.py you'll need to make new folder on your Google Drive, to put the audio-files and settings. Running this command in your terminal  ``` python drive-sync.py --init True``` (or simply write python and drag the drive-sync.py file in to get the specific path if you're new to a terminal ) runs the script for the first time, creates a folder called 'M4l-Timbre-Transfer' in the root of your Google Drive. The ID for this folder is saved in folderID.txt. You can also look at PyDrives documentation, and define you own folders ID as the folderID.txt. When you've initialised it, and stored the ID, you can just type run ```python drive-sync.py```
 6. Open the [notebook in Google Colab.](https://colab.research.google.com/github/nielsr2/M4L-DDSP-Timbre-Transfer/blob/master/m4l_timbre_transfer.ipynb)
 7. Run all the cells, import libraries, loading functions, and the loop. When the loop cell is running, it is looking for new files to process.
 8. The M4L-device will now send OSC-messsages to the python script with settings, and the file to upload to Google Drive.
-9. See video for use
+9. See video for use 
 
 ## Dependencies
 
