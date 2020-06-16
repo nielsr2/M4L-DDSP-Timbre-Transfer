@@ -14,7 +14,8 @@ python drive-sync.py --init True creates a Folder called "M4L-Timbre-Transfer-Fo
 
 ## Instructions
 
-1. install python
+1. install python ( and pip ```$ sudo easy_install pip
+$ sudo pip install --upgrade pip```)
 2. Open your Terminal and write the following commands ``` pip install python-osc```
 ``` pip install librosa```
 ``` pip install pydrive```
@@ -25,7 +26,7 @@ python drive-sync.py --init True creates a Folder called "M4L-Timbre-Transfer-Fo
 6. Open the [notebook in Google Colab.](https://colab.research.google.com/github/nielsr2/M4L-DDSP-Timbre-Transfer/blob/master/m4l_timbre_transfer.ipynb)
 7. Run all the cells, import libraries, loading functions, and the loop. When the loop cell is running, it is looking for new files to process.
 8. The M4L-device will now send OSC-messsages to the python script with settings, and the file to upload to Google Drive.
-9. See video for use 
+9. See video for use
 
 ## Dependencies
 

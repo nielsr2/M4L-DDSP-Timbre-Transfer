@@ -112,7 +112,7 @@ def downloadFile():
 
 def sendFile(unused_addr, fileName, model, octave, loudness, threshold, auto, autotune, quiet):
 
-    print("sending: counter " , counter , unused_addr, fileName, model, octave, loudness, threshold, auto, autotune, quiet)
+    # print("sending: counter " , counter , unused_a ddr, fileName, model, octave, loudness, threshold, auto, autotune, quiet)
     global counter, gdID, latency
     latency = int(time.time()) % 86400
 
